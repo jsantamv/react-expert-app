@@ -7,9 +7,9 @@ const initialState = [{
 
 
 const todoReducer = (state = initialState, action) => {
-    //aca seria defeniria el nuevo stado
+    //acá seria definiría el nuevo estado
     if (action?.type === 'agregar') {
-        return [...state, action.payload]  //operador spred para esparcir y agregar los demas objetos 
+        return [...state, action.payload]  //operador spread para esparcir y agregar los demás objetos 
     }
     return state
 }
@@ -22,8 +22,9 @@ const newTodo = {
     done: false
 }
 
-// Le indica al reducer con action que accion hacer
+// Le indica al reducer con action que acción hacer
 //el nombre action puede ser cualquier otro nombre
+
 const addTodoAction = {
     type: 'agregar',
     payload: newTodo //Opcional a payload pero esto lo que vamos a enviar
